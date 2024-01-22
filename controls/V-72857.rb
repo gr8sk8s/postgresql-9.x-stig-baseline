@@ -16,12 +16,12 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_DATA_DIR = attribute(
+PG_DATA_DIR = input(
   'pg_data_dir',
   description: 'The postgres data directory'
 )
 
-PG_HBA_CONF_FILE = attribute(
+PG_HBA_CONF_FILE = input(
   'pg_hba_conf_file',
   description: 'The postgres hba configuration file'
 )

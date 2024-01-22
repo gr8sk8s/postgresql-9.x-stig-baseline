@@ -16,52 +16,52 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_OWNER = attribute(
+PG_OWNER = input(
   'pg_owner',
   description: 'The system user of the postgres process'
 )
 
-PG_DBA = attribute(
+PG_DBA = input(
   'pg_dba',
   description: 'The postgres DBA user to access the test database'
 )
 
-PG_DBA_PASSWORD = attribute(
+PG_DBA_PASSWORD = input(
   'pg_dba_password',
   description: 'The password for the postgres DBA user'
 )
 
-PG_DB = attribute(
+PG_DB = input(
   'pg_db',
   description: 'The database used for tests'
 )
 
-PG_HOST = attribute(
+PG_HOST = input(
   'pg_host',
   description: 'The hostname or IP address used to connect to the database'
 )
 
-PG_SUPERUSERS = attribute(
+PG_SUPERUSERS = input(
   'pg_superusers',
   description: 'Authorized superuser accounts'
 )
 
-PG_OBJECT_GRANTED_PRIVILEGES = attribute(
+PG_OBJECT_GRANTED_PRIVILEGES = input(
   'pg_object_granted_privileges',
   description: 'Privileges that can be granted to a role for a database object',
-  default: 'arwdDxt'
+  value: 'arwdDxt'
 )
 
-PG_OBJECT_PUBLIC_PRIVILEGES = attribute(
+PG_OBJECT_PUBLIC_PRIVILEGES = input(
   'pg_object_public_privileges',
   description: 'Privileges that can be granted to public for a database object',
-  default: 'r'
+  value: 'r'
 )
 
-PG_OBJECT_EXCEPTIONS = attribute(
+PG_OBJECT_EXCEPTIONS = input(
   'pg_object_exceptions',
   description: 'List of database objects that should be excepted from tests',
-  default: ['pg_settings']
+  value: ['pg_settings']
 )
 
 control 'V-72911' do

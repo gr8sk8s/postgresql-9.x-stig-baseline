@@ -16,37 +16,37 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_DBA = attribute(
+PG_DBA = input(
   'pg_dba',
   description: 'The postgres DBA user to access the test database'
 )
 
-PG_DBA_PASSWORD = attribute(
+PG_DBA_PASSWORD = input(
   'pg_dba_password',
   description: 'The password for the postgres DBA user'
 )
 
-PG_DB = attribute(
+PG_DB = input(
   'pg_db',
   description: 'The database used for tests'
 )
 
-PG_HOST = attribute(
+PG_HOST = input(
   'pg_host',
   description: 'The hostname or IP address used to connect to the database'
 )
 
-PG_DATA_DIR = attribute(
+PG_DATA_DIR = input(
   'pg_data_dir',
   description: 'The postgres data directory'
 )
 
-PG_CONF_FILE = attribute(
+PG_CONF_FILE = input(
   'pg_conf_file',
   description: 'The postgres configuration file'
 )
 
-PG_USER_DEFINED_CONF = attribute(
+PG_USER_DEFINED_CONF = input(
   'pg_user_defined_conf',
   description: 'An additional postgres configuration file used to override default values'
 )

@@ -16,22 +16,22 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_DBA = attribute(
+PG_DBA = input(
   'pg_dba',
   description: 'The postgres DBA user to access the database'
 )
 
-PG_DBA_PASSWORD = attribute(
+PG_DBA_PASSWORD = input(
   'pg_dba_password',
   description: 'password for the postgres dba password'
 )
 
-PG_DB = attribute(
+PG_DB = input(
   'pg_db',
   description: 'the default postgres database'
 )
 
-PG_HOST = attribute(
+PG_HOST = input(
   'pg_host',
   description: 'Hostname or ip allow to connect to the database'
 )

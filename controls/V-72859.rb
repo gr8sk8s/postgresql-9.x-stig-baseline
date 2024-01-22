@@ -16,47 +16,47 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_OWNER = attribute(
+PG_OWNER = input(
   'pg_owner',
   description: 'The system user of the postgres process'
 )
 
-PG_DBA = attribute(
+PG_DBA = input(
   'pg_dba',
   description: 'The postgres DBA user to access the test database'
 )
 
-PG_DBA_PASSWORD = attribute(
+PG_DBA_PASSWORD = input(
   'pg_dba_password',
   description: 'The password for the postgres DBA user'
 )
 
-PG_DB = attribute(
+PG_DB = input(
   'pg_db',
   description: 'The database used for tests'
 )
 
-PG_HOST = attribute(
+PG_HOST = input(
   'pg_host',
   description: 'The hostname or IP address used to connect to the database'
 )
 
-PG_DATA_DIR = attribute(
+PG_DATA_DIR = input(
   'pg_data_dir',
   description: 'The postgres data directory'
 )
 
-PG_SUPERUSERS = attribute(
+PG_SUPERUSERS = input(
   'pg_superusers',
   description: 'Authorized superuser accounts'
 )
 
-PG_HBA_CONF_FILE = attribute(
+PG_HBA_CONF_FILE = input(
   'pg_hba_conf_file',
   description: 'The postgres hba configuration file'
 )
 
-PG_REPLICAS = attribute(
+PG_REPLICAS = input(
   'pg_replicas',
   description: 'List of postgres replicas in CIDR notation'
 )

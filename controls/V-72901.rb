@@ -16,12 +16,12 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_VERSION = attribute(
+PG_VERSION = input(
   'pg_version',
   description: 'The version of postgres'
 )
 
-PG_SHARED_DIRS = attribute(
+PG_SHARED_DIRS = input(
   'pg_shared_dirs',
   description: 'defines the locations of the postgresql shared library directories'
 )

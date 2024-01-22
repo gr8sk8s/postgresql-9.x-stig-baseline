@@ -16,67 +16,67 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_OWNER = attribute(
+PG_OWNER = input(
   'pg_owner',
   description: 'The system user of the postgres process'
 )
 
-PG_GROUP = attribute(
+PG_GROUP = input(
   'pg_group',
   description: 'The system group of the postgres process'
 )
 
-PG_DBA = attribute(
+PG_DBA = input(
   'pg_dba',
   description: 'The postgres DBA user to access the test database'
 )
 
-PG_DBA_PASSWORD = attribute(
+PG_DBA_PASSWORD = input(
   'pg_dba_password',
   description: 'The password for the postgres DBA user'
 )
 
-PG_DB = attribute(
+PG_DB = input(
   'pg_db',
   description: 'The database used for tests'
 )
 
-PG_HOST = attribute(
+PG_HOST = input(
   'pg_host',
   description: 'The hostname or IP address used to connect to the database'
 )
 
-PG_PORT = attribute(
+PG_PORT = input(
   'pg_port',
   description: 'The port used to connect to the database'
 )
 
-PG_DATA_DIR = attribute(
+PG_DATA_DIR = input(
   'pg_data_dir',
   description: 'The postgres data directory'
 )
 
-PG_CONF_FILE = attribute(
+PG_CONF_FILE = input(
   'pg_conf_file',
   description: 'The postgres configuration file'
 )
 
-PG_USER_DEFINED_CONF = attribute(
+PG_USER_DEFINED_CONF = input(
   'pg_user_defined_conf',
   description: 'An additional postgres configuration file used to override default values'
 )
 
-PG_SUPERUSERS = attribute(
+PG_SUPERUSERS = input(
   'pg_superusers',
   description: 'Authorized superuser accounts'
 )
 
-PG_VERSION = attribute(
+PG_VERSION = input(
   'pg_version',
   description: 'The version of postgres'
 )
 
-PG_SHARED_DIRS = attribute(
+PG_SHARED_DIRS = input(
   'pg_shared_dirs',
   description: 'defines the locations of the postgresql shared library directories'
 )

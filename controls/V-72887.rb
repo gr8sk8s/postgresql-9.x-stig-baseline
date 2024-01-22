@@ -16,27 +16,27 @@
 # Source: STIG.DOD.MIL
 # uri: http://iase.disa.mil
 # -----------------
-PG_DBA = attribute(
+PG_DBA = input(
   'pg_dba',
   description: 'The postgres DBA user to access the test database'
 )
 
-PG_DBA_PASSWORD = attribute(
+PG_DBA_PASSWORD = input(
   'pg_dba_password',
   description: 'The password for the postgres DBA user'
 )
 
-PG_DB = attribute(
+PG_DB = input(
   'pg_db',
   description: 'The database used for tests'
 )
 
-PG_HOST = attribute(
+PG_HOST = input(
   'pg_host',
   description: 'The hostname or IP address used to connect to the database'
 )
 
-PG_TIMEZONE = attribute(
+PG_TIMEZONE = input(
   'pg_timezone',
   description: 'PostgreSQL timezone'
 )
